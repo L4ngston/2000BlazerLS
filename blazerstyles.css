@@ -1,0 +1,103 @@
+
+p{
+  font-family: Arial;
+  
+}
+.Website-title{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 3;
+  text-align: center;
+  }
+
+.welcome-text{
+    font-size: 16px;
+    font-weight: thin;
+    line-height: 18px;
+    margin-bottom: 5;
+    Margin-top: 5;
+    text-align: justify;
+    Margin-left: auto;
+    margin-right: auto;
+    width: 393px;
+    }
+
+    .photos-text{
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 18px;
+      margin-bottom: 5;
+      Margin-top: 5;
+      text-align: Center;
+      Margin-left: auto;
+      margin-right: auto;
+      width: 393px;
+      }
+
+      .email-signup{
+        font-size: 16px;
+        font-weight: thin;
+        line-height: 18px;
+        margin-bottom: 1px;
+        Margin-top: 5;
+        text-align: Center;
+        Margin-left: auto;
+        margin-right: auto;
+        width: 393px;
+        }
+
+
+      .center-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+
+    .join-button{
+      margin-left: auto;
+      background-color: white;
+      border-color: rgb(178, 100, 180);
+      border-style: solid;
+      border-width: 1px;
+      color: rgb(85, 6, 212);
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background-color .15s, color .15s;
+      
+      
+    }
+    
+    .join-button:hover{
+      background-color: rgb(130, 6, 212);
+      color: rgb(212, 205, 212);
+    }
+    
+    .join-button:active{
+    opacity: .7;
+    }    
+
+    .email-form-button{
+      color: rgb(85, 6, 212);
+    }
+
+    .email-form-button:hover{
+      background-color: rgb(130, 6, 212);
+      color: rgb(212, 205, 212);
+    }
+    
+    .email-form-button:active{
+    opacity: .7;
+    }    
+
+    span{
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: thin;
+    }

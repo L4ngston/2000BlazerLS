@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2000BlazerLS</title>
+
+   
+
+    <link rel="stylesheet" href="styles/blazerstyles.css">
+  </head>
+  <body>
+    <p class="Website-title">
+      2000BlazerLS
+    </p>
+    
+    <p class="email-signup">
+      Sign up to recieve emails
+    </p>
+   
+  <div style="text-align:center">
+  <form class="email-form" name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email Address" required>
+    <button class="email-form-button" type="submit">Send</button>
+  </form>
+  <span id="msg"></span>
+</div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6AeUORMziuMxCZ181U2TV1Oi_yc9Jlj7jrq70RNjI9ShJYlY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Thanks for signing up!"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+    <p class="photos-text">
+      Photos
+    </p>
+
+    <a href="https://ibb.co/cvP9thV"><img src="https://i.ibb.co/JdNT2jg/IMG-1211.jpg" class="center-image" alt="IMG-1211" border="0"></a>
+
+    <a href="https://ibb.co/qxwxWZ6"><img src="https://i.ibb.co/x3Q3f4Z/IMG-1212.jpg" class="center-image" alt="IMG-1212" border="0"></a>
+
+    <a href="https://ibb.co/PrjFN0x"><img src="https://i.ibb.co/mRTbGgJ/IMG-1213.jpg" class="center-image" alt="IMG-1213" border="0"></a>
+
+    <a href="https://ibb.co/RpjF4m2"><img src="https://i.ibb.co/SXfj78N/IMG-1214.jpg" class="center-image" alt="IMG-1214" border="0" /></a>
+  
+
+    
+
+  </body>
+</html>
